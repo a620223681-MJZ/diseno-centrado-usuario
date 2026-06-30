@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño Centrado en el Usuario | Wiki Universitaria</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=PT+Sans+Narrow:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER SUPERIOR -->
+  <header class="top-header" id="inicio">
+    <div class="header-inner">
+
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-icon">W</span>
+        <span class="brand-text">
+          <strong>Wiki Universitaria</strong>
+          <small>Conocimiento que conecta</small>
+        </span>
+      </a>
+
+      <form class="desktop-search" role="search" onsubmit="return false;">
+        <span class="search-icon" aria-hidden="true"></span>
+        <input id="site-search" type="search" placeholder="Buscar en la wiki..." aria-label="Buscar en la wiki">
+      </form>
+
+      <div class="header-actions">
+        <a href="#referencias">Ayuda</a>
+        <a href="#articulos">Comunidad</a>
+        <button class="login-button" type="button">Ingresar</button>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- MENÚ PRINCIPAL -->
+  <nav class="main-nav" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a href="#inicio">Inicio</a>
+      <a href="#temas">Diseño UX</a>
+      <a href="#contenido">Contenido</a>
+      <a href="#articulos">Artículos</a>
+      <a href="#referencias">Referencias</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-inner">
+
+      <div class="hero-copy">
+        <p class="eyebrow">Proyecto integrador · Etapa 5</p>
+
+        <h1>Diseño centrado<br>en el usuario</h1>
+
+        <p class="hero-intro">
+          Aprende cómo diseñar productos digitales pensando en las necesidades, expectativas y experiencias reales de las personas.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="primary-button" href="#temas">Explorar contenidos</a>
+          <a class="secondary-button" href="#contenido">Ver explicación</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-card">
+          <div class="visual-window"></div>
+          <div class="visual-person"></div>
+          <div class="visual-accent"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="page-layout">
+
+    <section class="main-content">
+
+      <!-- TEMAS -->
+      <section class="content-block" id="temas">
+        <div class="section-heading">
+          <p class="section-kicker">Explora por tema</p>
+          <h2>Temas principales</h2>
+          <p>Selecciona una tarjeta para visualizar una explicación completa mediante una ventana emergente.</p>
+        </div>
+
+        <div class="topics-grid">
+
+          <article class="topic-card" data-topic="dcu" data-title="¿Qué es el DCU?">
+            <span class="topic-icon icon-user"></span>
+            <h3>¿Qué es el DCU?</h3>
+            <p>Comprende los fundamentos del Diseño Centrado en el Usuario.</p>
+            <button type="button" class="card-link">Ver más</button>
+          </article>
+
+          <article class="topic-card" data-topic="investigacion" data-title="Investigación de usuarios">
+            <span class="topic-icon icon-search-user"></span>
+            <h3>Investigación de usuarios</h3>
+            <p>Aprende a conocer las necesidades y comportamientos de los usuarios.</p>
+            <button type="button" class="card-link">Ver más</button>
+          </article>
+
+          <article class="topic-card" data-topic="entrevistas" data-title="Entrevistas y encuestas">
+            <span class="topic-icon icon-chat"></span>
+            <h3>Entrevistas y encuestas</h3>
+            <p>Recopila información valiosa para diseñar mejores soluciones.</p>
+            <button type="button" class="card-link">Ver más</button>
+          </article>
+
+          <article class="topic-card" data-topic="empatia" data-title="Mapas de empatía">
+            <span class="topic-icon icon-heart"></span>
+            <h3>Mapas de empatía</h3>
+            <p>Comprende pensamientos, emociones y necesidades del usuario.</p>
+            <button type="button" class="card-link">Ver más</button>
+          </article>
+
+          <article class="topic-card" data-topic="personas" data-title="User Personas">
+            <span class="topic-icon icon-persona"></span>
+            <h3>User Personas</h3>
+            <p>Representa perfiles de usuarios para orientar el diseño.</p>
+            <button type="button" class="card-link">Ver más</button>
+          </article>
+
+          <article class="topic-card" data-topic="wireframes" data-title="Prototipos y Wireframes">
+            <span class="topic-icon icon-wireframe"></span>
+            <h3>Prototipos y Wireframes</h3>
+            <p>Visualiza ideas antes de desarrollar el producto final.</p>
+            <button type="button" class="card-link">Ver más</button>
+          </article>
+
+          <article class="topic-card" data-topic="usabilidad" data-title="Pruebas de usabilidad">
+            <span class="topic-icon icon-check"></span>
+            <h3>Pruebas de usabilidad</h3>
+            <p>Evalúa si el diseño funciona correctamente para los usuarios.</p>
+            <button type="button" class="card-link">Ver más</button>
+          </article>
+
+          <article class="topic-card" data-topic="mejora" data-title="Mejora continua">
+            <span class="topic-icon icon-refresh"></span>
+            <h3>Mejora continua</h3>
+            <p>Optimiza el producto mediante retroalimentación constante.</p>
+            <button type="button" class="card-link">Ver más</button>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- CONTENIDO EXPLICATIVO -->
+      <section class="content-block beige-block" id="contenido">
+        <div class="section-heading">
+          <p class="section-kicker">Contenido destacado</p>
+          <h2>Diseñar pensando en las personas</h2>
+        </div>
+
+        <p class="intro-paragraph">
+          El Diseño Centrado en el Usuario permite crear páginas web, aplicaciones y plataformas digitales más claras, accesibles y funcionales. Su objetivo es que las personas puedan encontrar información, comprender la interfaz y realizar acciones sin sentirse confundidas durante la navegación.
+        </p>
+
+        <div class="info-columns">
+          <article>
+            <h3>Importancia</h3>
+            <p>
+              Este enfoque ayuda a evitar que el diseño se base únicamente en gustos visuales. En su lugar, permite tomar decisiones considerando necesidades reales, problemas frecuentes y comportamientos observables de los usuarios.
+            </p>
+          </article>
+
+          <article>
+            <h3>Aplicación en la wiki</h3>
+            <p>
+              En una wiki universitaria, el DCU permite organizar categorías, artículos, botones y recursos de manera lógica, facilitando que los estudiantes encuentren contenidos académicos con rapidez.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROCESO -->
+      <section class="content-block">
+        <div class="section-heading">
+          <p class="section-kicker">Proceso</p>
+          <h2>Etapas del Diseño Centrado en el Usuario</h2>
+        </div>
+
+        <div class="process-list">
+          <div><strong>1</strong><span>Investigar</span></div>
+          <div><strong>2</strong><span>Definir</span></div>
+          <div><strong>3</strong><span>Idear</span></div>
+          <div><strong>4</strong><span>Prototipar</span></div>
+          <div><strong>5</strong><span>Evaluar</span></div>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="articulos">
+      <div class="sidebar-card">
+        <h2>Artículos populares</h2>
+        <p class="sidebar-note">Selecciona un artículo para abrirlo en una nueva pestaña.</p>
+
+        <article class="article-card" data-title="¿Qué es el Diseño Centrado en el Usuario?" data-url="https://es.wikipedia.org/wiki/Dise%C3%B1o_centrado_en_el_usuario">
+          <span class="article-thumb">img</span>
+          <div>
+            <h3>¿Qué es el Diseño Centrado en el Usuario?</h3>
+            <p>Conceptos básicos para comprender la metodología.</p>
+            <small>5 min de lectura</small>
+          </div>
+        </article>
+
+        <article class="article-card" data-title="Principios fundamentales del DCU" data-url="https://es.wikipedia.org/wiki/Dise%C3%B1o_de_experiencia_de_usuario">
+          <span class="article-thumb">img</span>
+          <div>
+            <h3>Principios fundamentales del DCU</h3>
+            <p>Los pilares que guían el diseño orientado al usuario.</p>
+            <small>6 min de lectura</small>
+          </div>
+        </article>
+
+        <article class="article-card" data-title="Las etapas del Diseño Centrado en el Usuario" data-url="https://es.wikipedia.org/wiki/Dise%C3%B1o_centrado_en_el_usuario">
+          <span class="article-thumb">img</span>
+          <div>
+            <h3>Las etapas del Diseño Centrado en el Usuario</h3>
+            <p>Desde la investigación hasta la evaluación.</p>
+            <small>7 min de lectura</small>
+          </div>
+        </article>
+
+        <article class="article-card" data-title="Caso práctico de Diseño Centrado en el Usuario" data-url="https://es.wikipedia.org/wiki/Prueba_de_usabilidad">
+          <span class="article-thumb">img</span>
+          <div>
+            <h3>Caso práctico de Diseño Centrado en el Usuario</h3>
+            <p>Aplicación real de la metodología en un sitio web.</p>
+            <small>6 min de lectura</small>
+          </div>
+        </article>
+      </div>
+
+      <div class="sidebar-card quick-links">
+        <h2>Accesos rápidos</h2>
+        <a href="#inicio">Volver al inicio</a>
+        <a href="#temas">Explorar temas</a>
+        <a href="#contenido">Leer contenido</a>
+        <a href="#referencias">Ver referencias</a>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- REFERENCIAS -->
+  <section class="references-section" id="referencias">
+    <div class="references-inner">
+      <h2>Referencias</h2>
+      <p>Canva. (s.f.). <em>Canva</em>. https://www.canva.com</p>
+      <p>Flaticon. (s.f.). <em>Flaticon</em>. https://www.flaticon.com</p>
+      <p>Wikipedia. (s.f.). <em>Diseño centrado en el usuario</em>. https://es.wikipedia.org/wiki/Diseño_centrado_en_el_usuario</p>
+      <p>Wikipedia. (s.f.). <em>Diseño de experiencia de usuario</em>. https://es.wikipedia.org/wiki/Diseño_de_experiencia_de_usuario</p>
+      <p>Wikipedia. (s.f.). <em>Prueba de usabilidad</em>. https://es.wikipedia.org/wiki/Prueba_de_usabilidad</p>
+      <p>Norman, D. A. (2013). <em>The design of everyday things</em>. Basic Books.</p>
+      <p>Krug, S. (2014). <em>Don't make me think, revisited</em>. New Riders.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contacto">
+    <div class="footer-inner">
+      <div>
+        <h2>Wiki Universitaria</h2>
+        <p>Conocimiento que conecta</p>
+      </div>
+
+      <nav aria-label="Enlaces finales">
+        <a href="#inicio">Inicio</a>
+        <a href="#temas">Acerca de</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#referencias">Privacidad</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="info-modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Cerrar ventana">×</button>
+      <h2 id="modal-title">Título</h2>
+      <p id="modal-text">Contenido del recurso.</p>
+    </div>
+  </div>
+
+  <button class="back-top" type="button" aria-label="Volver arriba">↑</button>
+
+</body>
+</html>
